@@ -1,0 +1,126 @@
+.contact-right{
+  position: absolute;
+  width: 400px;
+  /* height: 207px; */
+  left: 950px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-left-bg
+{
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  height: 500px;
+}
+.contact-left
+{
+  top: 300px;
+  left: 260px;
+  height: 475px;
+  width: 650px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.contact-address
+{
+  height: 150px;
+  margin-bottom: 10;
+  width: 400px;
+
+}
+.contact-address-svg
+{
+  height: 150px;
+  margin-bottom: 10;
+  width: 400px;
+
+}
+
+.contact-row1
+{
+  left: 50px;
+  top: 100px;
+  width: 600px;
+  height: 50px;
+  margin-bottom: 15;
+  display: flex;
+  flex-direction: row;
+}
+.contact-row2
+{
+  left: 50px;
+  width: 600px;
+  height: 50px;
+  margin-bottom: 15;
+  display: flex;
+  flex-direction: row;
+}
+.contact-row3
+{
+  left: 50px;
+  width: 600px;
+  height: 50px;
+}
+.contact-input1 {
+  top: 0px;
+  left: 50px;
+  width: 240px;
+  height: 50px;
+  padding: 8px;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  margin-right: 15;
+  box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
+  border-radius: 16px;
+  justify-content: space-between;
+  background-color: var(--dl-color-default-w);
+}
+.contact-input2 {
+  top: 0px;
+  left: 50px;
+  width: 340px;
+  height: 50px;
+  padding: 8px;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 10;
+  box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
+  border-radius: 16px;
+  justify-content: space-between;
+  background-color: var(--dl-color-default-w);
+}
+.contact-input3 {
+  top: 0px;
+  left: 50px;
+  width: 600px;
+  height: 120px;
+  padding: 8px;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 0;
+  margin-bottom: 20;
+  box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
+  border-radius: 16px;
+  justify-content: space-between;
+  background-color: var(--dl-color-default-w);
+}
+
+.contact-send
+{
+  align-items: center;
+  width: 300px;
+  position: absolute;
+  top: 280px;
+  left:150px;
+}
