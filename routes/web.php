@@ -17,12 +17,15 @@ use Barryvdh\DomPDF\Facade\PDF;
 |
 */
 
-Route::get('/welcome', [TicketController::class, 'generatePDF'])->name('generate-pdf');
+Route::get('/welcome',function()
+{
+    return view('welcome');
+});
 
 Route::get('/',[TicketController::class,'index'])->name('ticket');
 Route::get('/ticket',[TicketController::class,'index'])->name('ticket');
 Route::post('/ticket/create',[TicketController::class,'create'])->name('ticket.create');
-Route::post('/ticket/update',[TicketController::class,'update'])->name('ticket.update');
+Route::post('/ticket/update/{id}',[TicketController::class,'update'])->name('ticket.update');
 
 Route::get('/event',[EventController::class,'index'])->name('event');
 Route::get('/event/show',[EventController::class,'show'])->name('event.show');

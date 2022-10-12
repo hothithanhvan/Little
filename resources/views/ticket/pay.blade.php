@@ -28,7 +28,7 @@
                 <img
                   src="{{asset('playground_assets/vecongvegiadinh.svg')}}" class="pay-ticket"
                 />
-                <form method="post" action="{{route('ticket.update')}}">
+                <form method="post" action="{{route('ticket.update',$a->id)}}">
                   @csrf
                 <div class="pay-inside-frame">
                 
