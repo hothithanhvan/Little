@@ -29,7 +29,58 @@
   height: 150px;
   margin-bottom: 10;
   width: 400px;
-
+ 
+}
+.contact-tieude
+{
+  top: 30px;
+  left: 100px;
+  font-size: 18px;
+  font-weight: bolder;
+  position: absolute;
+  color: black;
+}
+.contact-noidung
+{
+  top: 60px;
+  left: 100px;
+  font-size: 16px;
+  position: absolute;
+  color: gray;
+}
+.contact-tieude1
+{
+  top: 30px;
+  left: 100px;
+  font-size: 18px;
+  font-weight: bolder;
+  position: absolute;
+  color: black;
+}
+.contact-noidung1
+{
+  top: 60px;
+  left: 100px;
+  font-size: 16px;
+  position: absolute;
+  color: gray;
+}
+.contact-tieude
+{
+  top: 30px;
+  left: 100px;
+  font-size: 18px;
+  font-weight: bolder;
+  position: absolute;
+  color: black;
+}
+.contact-noidung
+{
+  top: 60px;
+  left: 100px;
+  font-size: 16px;
+  position: absolute;
+  color: gray;
 }
 .contact-address-svg
 {

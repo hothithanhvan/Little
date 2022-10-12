@@ -8,13 +8,13 @@
             <div class="trangch-group2">
               <div class="trangch-frame20">
                 <div class="trangch-tags">
-                  <span class="trangch-text35"><span>Trang chủ</span></span>
+                  <a href="{{url('ticket')}}" class="trangch-text35">Trang chủ</a>
                 </div>
                 <div class="trangch-tags1">
-                  <a href="{{url('event')}}" class="trangch-text37">Sự kiện</a>
+                  <a href="{{url('event')}}" class="trangch-text35">Sự kiện</a>
                 </div>
                 <div class="trangch-tags2">
-                  <a href="{{url('contact')}}" class="trangch-text39">Liên hệ</a>
+                  <a href="{{url('contact')}}" class="trangch-text35">Liên hệ</a>
                 </div>
               </div>
               <div class="trangch-frame22">

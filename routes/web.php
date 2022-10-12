@@ -4,7 +4,8 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
-
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
+use Barryvdh\DomPDF\Facade\PDF;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,19 +17,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/welcome', [TicketController::class, 'generatePDF'])->name('generate-pdf');
 
-Route::get('/',[TicketController::class,'index']);
+Route::get('/',[TicketController::class,'index'])->name('ticket');
+Route::get('/ticket',[TicketController::class,'index'])->name('ticket');
+Route::post('/ticket/create',[TicketController::class,'create'])->name('ticket.create');
+Route::post('/ticket/update',[TicketController::class,'update'])->name('ticket.update');
+
 Route::get('/event',[EventController::class,'index'])->name('event');
+Route::get('/event/show',[EventController::class,'show'])->name('event.show');
+
 Route::get('/contact',[ContactController::class,'index'])->name('contact');
-Route::get('/event/show', function () {
-    return view('event.show');
-});
-Route::get('/ticket/pay', function () {
-    return view('ticket.pay');
-});
-Route::get('/ticket/success', function () {
-    return view('ticket.success');
-});
+Route::get('/contact/create',[ContactController::class,'create'])->name('contact.create');
+
+// Route::get('/ticket/pay', function () {
+//     return view('ticket.pay');
+// });
+// Route::get('/ticket/success', function () {
+//     return view('ticket.success');
+// });
+
+Route::get('/generate-pdf/{id}', [TicketController::class, 'generatePDF'])->name('generate-pdf');

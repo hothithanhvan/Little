@@ -17,37 +17,48 @@
                 <img
                     src="{{asset('playground_assets/khungguilienhe.svg')}}" class="contact-left-bg"
                   />
+                  <div class="tieude">
+                  <span class="tieude-text">Liên lạc</span>
+                </div>
               <div class="contact-left">
-                
+                <form action="{{route('contact.create')}}" >
                 <div class="contact-row1">
-                <input type="text" class="contact-input1" placeholder="Tên">
-                <input type="text" class="contact-input2" placeholder="Email">
+                <input type="text" name="ten" class="contact-input1" placeholder="Tên">
+                <input type="text" name="email" class="contact-input2" placeholder="Email">
                 </div>
                 <div class="contact-row2">
-                <input type="text" class="contact-input1" placeholder="Số điện thoại">
-                <input type="text" class="contact-input2" placeholder="Địa chỉ">
+                <input type="text" name="sdt" class="contact-input1" placeholder="Số điện thoại">
+                <input type="text" name="diachi" class="contact-input2" placeholder="Địa chỉ">
                 </div>
                 <div class="contact-row3">
-                <input type="text" class="contact-input3" placeholder="Lời nhắn">
+                <input type="text" name="loinhan" class="contact-input3" placeholder="Lời nhắn">
                 </div>
+                <button type="submit">
                 <img src="{{asset('playground_assets/guilienhe.svg')}}" class="contact-send" />
-
+                </button>
+                </form>
               </div>
                 <div class="contact-right">
                   <div class="contact-address">
                   <img
                   src="{{asset('playground_assets/địa chỉ.svg')}}" class="contact-address-svg"
                 />
+                <span class="contact-tieude">Địa chỉ</span>
+                <span class="contact-noidung">Âu cơ</span>
                   </div>
                   <div class="contact-address">
                   <img
                   src="{{asset('playground_assets/mail.svg')}}" class="contact-address-svg"
                 />
+                <span class="contact-tieude1">Địa chỉ</span>
+                <span class="contact-noidung1">Âu cơ</span>
                   </div>
                   <div class="contact-address">
                   <img
                   src="{{asset('playground_assets/điện thoại.svg')}}" class="contact-address-svg"
                 />
+                <span class="contact-tieude2">Địa chỉ</span>
+                <span class="contact-noidung2">Âu cơ</span>
                   </div>
                 </div>
             </div>
