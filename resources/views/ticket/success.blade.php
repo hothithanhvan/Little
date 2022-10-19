@@ -55,7 +55,9 @@
                 <a href ="{{route('generate-pdf',$b->id )}}">
                 <img src="{{asset('playground_assets/tải về.svg')}}" class="sc-taive" />
               </a>
+              <a href ="{{route('sendMail', $b->id )}}">
                 <img src="{{asset('playground_assets/gửi mail.svg')}}" class="sc-taive" />
+              </a>
               </div>
       </div>
     </div>

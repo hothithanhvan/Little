@@ -33,11 +33,5 @@ Route::get('/event/show',[EventController::class,'show'])->name('event.show');
 Route::get('/contact',[ContactController::class,'index'])->name('contact');
 Route::get('/contact/create',[ContactController::class,'create'])->name('contact.create');
 
-// Route::get('/ticket/pay', function () {
-//     return view('ticket.pay');
-// });
-// Route::get('/ticket/success', function () {
-//     return view('ticket.success');
-// });
-
 Route::get('/generate-pdf/{id}', [TicketController::class, 'generatePDF'])->name('generate-pdf');
+Route::get('/sendMail/{id}', [TicketController::class, 'sendMail'])->name('sendMail');
