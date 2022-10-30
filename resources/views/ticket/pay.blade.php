@@ -28,6 +28,7 @@
                 <img
                   src="{{asset('playground_assets/vecongvegiadinh.svg')}}" class="pay-ticket"
                 />
+                
                 <form method="post" action="{{route('ticket.update',$a->id)}}">
                   @csrf
                 <div class="pay-inside-frame">
@@ -59,6 +60,9 @@
                   <input type="text" class="pay-input4" value="{{$a->email}}"/>
                   </div>
                 </div>
+                <img
+                    src="{{asset('playground_assets/girlthanhtoan.svg')}}" class="ticket-girlthanhtoan"
+                  />
              <div class="pay-right-frame">
               <span class="ticket-text">Số thẻ</span>
               <input type="text" class="pay-input2" name="sothe"/>

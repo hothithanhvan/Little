@@ -28,7 +28,7 @@ Route::post('/ticket/create',[TicketController::class,'create'])->name('ticket.c
 Route::post('/ticket/update/{id}',[TicketController::class,'update'])->name('ticket.update');
 
 Route::get('/event',[EventController::class,'index'])->name('event');
-Route::get('/event/show',[EventController::class,'show'])->name('event.show');
+Route::get('/event/show/{id}',[EventController::class,'show'])->name('event.show');
 
 Route::get('/contact',[ContactController::class,'index'])->name('contact');
 Route::get('/contact/create',[ContactController::class,'create'])->name('contact.create');

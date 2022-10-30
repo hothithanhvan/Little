@@ -29,6 +29,17 @@
                   class="trangch-vector108"
                 />
               </div>
+              <div class="ticket-text1">
+              Đến với Công Viên Nước Đầm Sen, các bạn sẽ cảm nhận ngay về một ốc đảo xanh mát tọa lạc ngay 
+              giữa lòng thành phố.Với 36 thiết bị trò chơi dưới nước hiện đại cùng một hồ tạo sóng mát lạnh
+               rộng 3000m2 hứa hẹn sẽ mang đến cho bạn nhiều cảm giác thư giãn thú vị.
+               <br>
+               Công viên nước Đầm Sen với không gian hài hòa được kết hợp với những dòng sông đầy lãng mạn làm 
+               tan đi những lo lắng buồn phiền đồng thời cũng là nguồn cung cấp năng lượng cho một ngày mới. 
+               Hãy hít thật sâu để tận hưởng cái không khí trong lành của một thiên nhiên thơ mộng rồi đắm mình 
+               vào sóng biển nhấp nhô hay thả mình bồng bềnh giữa trời mây nước để Dòng Sông Lơ Đãng xoa dịu và 
+               xua tan đi những lo lắng muộn phiền trong cuộc sống đầy lo toan.
+              </div>
             <img
                   src="{{asset('playground_assets/Frame.svg')}}"  class="frame03"/>
                   <form method="post" action="{{route('ticket.create')}}">

@@ -11,8 +11,8 @@
 {
   position: absolute;
   top: 200px;
-  left: 200px;
-  height: 500px;
+  left: 220px;
+  height: 480px;
 }
 .contact-left
 {
@@ -31,23 +31,7 @@
   width: 400px;
  
 }
-.contact-tieude
-{
-  top: 30px;
-  left: 100px;
-  font-size: 18px;
-  font-weight: bolder;
-  position: absolute;
-  color: black;
-}
-.contact-noidung
-{
-  top: 60px;
-  left: 100px;
-  font-size: 16px;
-  position: absolute;
-  color: gray;
-}
+
 .contact-tieude1
 {
   top: 30px;
@@ -65,18 +49,35 @@
   position: absolute;
   color: gray;
 }
-.contact-tieude
+.contact-tieude2
 {
-  top: 30px;
+  top: 190px;
   left: 100px;
   font-size: 18px;
   font-weight: bolder;
   position: absolute;
   color: black;
 }
-.contact-noidung
+.contact-noidung2
 {
-  top: 60px;
+  top: 220px;
+  left: 100px;
+  font-size: 16px;
+  position: absolute;
+  color: gray;
+}
+.contact-tieude3
+{
+  top: 350px;
+  left: 100px;
+  font-size: 18px;
+  font-weight: bolder;
+  position: absolute;
+  color: black;
+}
+.contact-noidung3
+{
+  top: 380px;
   left: 100px;
   font-size: 16px;
   position: absolute;
@@ -174,4 +175,11 @@
   position: absolute;
   top: 280px;
   left:150px;
+}
+
+.contact-boylienhe
+{
+  top: 200px;
+  position: absolute;
+  width: 250px;
 }

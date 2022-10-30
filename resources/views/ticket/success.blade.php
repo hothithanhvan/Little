@@ -27,12 +27,15 @@
                   <span class="sc-vecong">Vé cổng <?php echo $i+1; ?></span>
                  <img src="{{asset('playground_assets/---.svg')}}" class="sc-gach" />
                   <span class="sc-ngaysd">Ngày sử dụng: {{$b->ngaysd}}</span>
+                  <img src="{{asset('playground_assets/tick 1.svg')}}" class="sc-gach" />
                 </div>
                 
                 <?php } ?>
                 @endforeach
               </div>
-              
+              <div class="sc-slv">
+                Số lượng vé: {{$b->soluongve}}.
+              </div>
                 <button id="slideLeft">
               <img src="{{asset('playground_assets/Previous btn.svg')}}" class="sc-previousbtn" />
                 </button>

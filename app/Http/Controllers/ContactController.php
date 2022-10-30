@@ -7,23 +7,19 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
+    public function __construct()
+    {
+        $this->contacts = new Contact();
+    }
     public function index()
     {
         return view('contact.index');
     }
+
     public function create(Request $request)
     {
-        $request->validate([
-            'ten' => 'required',
-            'email' => 'required',
-            'sdt' => 'required',
-            'diachi' => 'required',
-            'loinhan' => 'required',  
-        ],
-    [
-        'loinhan.required' => 'Nhập đầy đủ các trường thông tin',
-    ]);
-        Contact::create($request->all());
-        return view('contact.index');
+
+        $contact = $this->contacts->create($request);
+        return redirect()->route('contact');
     }
 }

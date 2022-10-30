@@ -16,12 +16,17 @@
               <div class="tieude">
                   <span class="tieude-text">Sự kiện nổi bật</span>
                 </div>
+                <img
+                  src="{{asset('playground_assets/dayleft.svg')}}" class="event-dayleft"
+                /> 
+                <img
+                  src="{{asset('playground_assets/dayright.svg')}}" class="event-dayright"
+                /> 
             <div id="khung" class="event-khung">
               @foreach ($event as $event)
               <div class="event-event1">
                   <img
-                    src="{{asset('playground_assets/rectangle11265-lipj-300h.png')}}"
-                    alt="Rectangle11265"
+                    src="{{asset('playground_assets/'.$event->image.'')}}"
                     class="event-rectangle1"
                   />
                           <span class="event-text02">
@@ -41,7 +46,7 @@
                           </span>
                         </div>
                     <span class="event-text08"><span>{{$event->gia}} VNĐ</span></span>
-                    <a href="{{url('/event/show')}}">
+                    <a href="{{url('/event/show', $event->id)}}">
                     <img src="{{asset('playground_assets/Btn xem chi tiết.svg')}}" class="event-btnxemchitit" />
                     </a>
               </div>  

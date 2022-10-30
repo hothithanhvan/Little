@@ -20,6 +20,7 @@
                   <div class="tieude">
                   <span class="tieude-text">Liên lạc</span>
                 </div>
+               
               <div class="contact-left">
                 <form action="{{route('contact.create')}}" >
                 <div class="contact-row1">
@@ -38,27 +39,30 @@
                 </button>
                 </form>
               </div>
+              <img
+                    src="{{asset('playground_assets/boylienhe.svg')}}" class="contact-boylienhe"
+                  />
                 <div class="contact-right">
                   <div class="contact-address">
                   <img
                   src="{{asset('playground_assets/địa chỉ.svg')}}" class="contact-address-svg"
-                />
-                <span class="contact-tieude">Địa chỉ</span>
-                <span class="contact-noidung">Âu cơ</span>
-                  </div>
-                  <div class="contact-address">
-                  <img
-                  src="{{asset('playground_assets/mail.svg')}}" class="contact-address-svg"
                 />
                 <span class="contact-tieude1">Địa chỉ</span>
                 <span class="contact-noidung1">Âu cơ</span>
                   </div>
                   <div class="contact-address">
                   <img
+                  src="{{asset('playground_assets/mail.svg')}}" class="contact-address-svg"
+                />
+                <span class="contact-tieude2">Email</span>
+                <span class="contact-noidung2">Thanhvan@gmail.com</span>
+                  </div>
+                  <div class="contact-address">
+                  <img
                   src="{{asset('playground_assets/điện thoại.svg')}}" class="contact-address-svg"
                 />
-                <span class="contact-tieude2">Địa chỉ</span>
-                <span class="contact-noidung2">Âu cơ</span>
+                <span class="contact-tieude3">Điện thoại</span>
+                <span class="contact-noidung3">0123456789</span>
                   </div>
                 </div>
             </div>

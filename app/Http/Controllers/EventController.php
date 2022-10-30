@@ -6,13 +6,18 @@ use Illuminate\Http\Request;
 use App\Models\Event;
 class EventController extends Controller
 {
+    public function __construct()
+    {
+        $this->events = new Event();
+    }
     public function index()
     {
-        $event = Event::get();
+        $event = $this->events->getAll();
         return view('event.index',compact('event'));
     }
-    public function show()
+    public function show($id)
     {
-        return view('event.event');
+        $event = Event::where('id',$id)->first();
+        return view('event.event'.$id.'', compact('event'));
     }
 }
